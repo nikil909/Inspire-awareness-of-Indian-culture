@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Indian Culture and Heritage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-translate="headerTitle">Explore Indian Culture and Heritage</h1>
+        <nav>
+            <ul>
+                <li><a href="#culture" data-translate="navCulture">Indian Culture</a></li>
+                <li><a href="#traditions" data-translate="navTraditions">Traditions</a></li>
+                <li><a href="#festivals" data-translate="navFestivals">Festivals</a></li>
+                <li><a href="#food" data-translate="navFood">Food</a></li>
+            </ul>
+        </nav>
+        <div class="header-tools">
+            <input type="text" id="search-input" placeholder="Search..." data-translate="searchPlaceholder">
+            <button onclick="searchContent()" data-translate="searchButton">Search</button>
+            <select id="language-select" onchange="translatePage()">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="zh">Chinese</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Results -->
+        <section id="search-results" style="display: none;">
+            <h2 data-translate="searchResultsHeading">Search Results</h2>
+            <ul id="search-results-list"></ul>
+        </section>
+
+        <!-- Indian Culture Section -->
+        <section id="culture">
+            <h2 data-translate="cultureHeading">Indian Culture</h2>
+            <img src="images/culture.jpeg" alt="Indian Culture" class="topic-image">
+            <p data-translate="cultureDescription">India is one of the world's oldest civilizations, known for its rich cultural heritage and diverse traditions.</p>
+            <ul>
+                <li><strong data-translate="languagesLabel">Languages:</strong> <span data-translate="languagesContent">India is home to 22 official languages and over 1,600 dialects.</span></li>
+                <li><strong data-translate="religionLabel">Religion:</strong> <span data-translate="religionContent">A birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism.</span></li>
+            </ul>
+        </section>
+
+        <!-- Traditions Section -->
+        <section id="traditions">
+            <h2 data-translate="traditionsHeading">Indian Traditions</h2>
+            <img src="images/69.jpg" alt="Indian Traditions" class="topic-image">
+            <p data-translate="traditionsDescription">Indian traditions reflect the harmony and unity among its diverse communities.</p>
+            <ul>
+                <li><strong data-translate="yogaLabel">Yoga:</strong> <span data-translate="yogaContent">An ancient practice for physical, mental, and spiritual well-being.</span></li>
+                <li><strong data-translate="ayurvedaLabel">Ayurveda:</strong> <span data-translate="ayurvedaContent">A traditional system of medicine focusing on holistic healing.</span></li>
+            </ul>
+        </section>
+
+        <!-- Festivals Section -->
+        <section id="festivals">
+            <h2 data-translate="festivalsHeading">Festivals of India</h2>
+            <img src="images/88.jpg" alt="Indian Festivals" class="topic-image">
+            <p data-translate="festivalsDescription">India is a land of festivals, celebrating its diverse cultures and traditions.</p>
+            <ul>
+                <li><strong data-translate="diwaliLabel">Diwali:</strong> <span data-translate="diwaliContent">The festival of lights, symbolizing the triumph of good over evil.</span></li>
+                <li><strong data-translate="holiLabel">Holi:</strong> <span data-translate="holiContent">The festival of colors, celebrating joy and unity.</span></li>
+            </ul>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food">
+            <h2 data-translate="foodHeading">Indian Cuisine</h2>
+            <img src="images/96.jpg" alt="Indian Food" class="topic-image">
+            <p data-translate="foodDescription">Indian cuisine is known for its diverse flavors, spices, and regional specialties.</p>
+            <ul>
+                <li><strong data-translate="northIndianLabel">North Indian:</strong> <span data-translate="northIndianContent">Famous for dishes like butter chicken, naan, and biryani.</span></li>
+                <li><strong data-translate="southIndianLabel">South Indian:</strong> <span data-translate="southIndianContent">Known for dosa, idli, sambar, and coconut-based dishes.</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p data-translate="footerText">© 2024 Indian Culture and Heritage. All rights reserved.</p>
+    </footer>
+
+    <script src="js/translate.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
